@@ -7,5 +7,17 @@ const app = express();
 app.use(express.json());
 
 // logic goes here
+// importing user context
+const User = require("./model/user");
+
+// Register
+app.post("/register", (req, res) => {
+// our register logic goes here...
+});
+
+// Login
+app.post("/login", (req, res) => {
+// our login logic goes here
+});
 
 module.exports = app;
